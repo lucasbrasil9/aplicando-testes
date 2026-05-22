@@ -12,15 +12,10 @@ O **MSTest** é o framework de testes padrão da Microsoft, integrado nativament
 
 ### Cenários de Exemplo
 
-#### Cenário 1: Conversão do Ponto de Congelamento da Água
+#### Conversão do Ponto de Congelamento da Água
 * **Entrada (Fahrenheit):** `32.0`
 * **Resultado Esperado (Celsius):** `0.0`
 * **Explicação:** Valida se o ponto de congelamento padrão (32°F) é convertido corretamente para o equivalente exato a 0°C.
-
-#### Cenário 2: Conversão de Temperatura Negativa em Celsius
-* **Entrada (Fahrenheit):** `14.0`
-* **Resultado Esperado (Celsius):** `-10.0`
-* **Explicação:** Garante que o cálculo permanece preciso quando o resultado da conversão resulta em uma temperatura abaixo de zero grau Celsius.
 
 ### Execução do Teste
 Aqui está o registro da execução bem-sucedida utilizando a suíte do MSTest:
@@ -34,15 +29,10 @@ O **NUnit** é um framework de código aberto altamente popular e amplamente por
 
 ### Cenários de Exemplo
 
-#### Cenário 1: Conversão do Ponto de Ebulição da Água
+#### Conversão do Ponto de Ebulição da Água
 * **Entrada (Fahrenheit):** `212.0`
 * **Resultado Esperado (Celsius):** `100.0`
 * **Explicação:** Testa a precisão do algoritmo no ponto máximo de ebulição da água sob pressão atmosférica normal.
-
-#### Cenário 2: Conversão de uma Temperatura Ambiente Comum
-* **Entrada (Fahrenheit):** `77.0`
-* **Resultado Esperado (Celsius):** `25.0`
-* **Explicação:** Valida um cenário comum do dia a dia (clima temperado/ambiente) para conferir a exatidão com casas decimais zeradas.
 
 ### Execução do Teste
 Aqui está o registro da execução bem-sucedida utilizando a suíte do NUnit:
@@ -56,15 +46,10 @@ O **xUnit.net** é uma ferramenta moderna, focada no futuro, construída do zero
 
 ### Cenários de Exemplo
 
-#### Cenário 1: Conversão Parametrizada (Múltiplos Valores Básicos)
+#### Conversão Parametrizada (Múltiplos Valores Básicos)
 * **Entradas Testadas (Fahrenheit):** `32.0`, `86.0`, `212.0`
 * **Resultados Esperados (Celsius):** `0.0`, `30.0`, `100.0`
 * **Explicação:** Através do recurso `[Theory]`, injetamos múltiplos valores em um único bloco de código estruturado para validar a integridade da fórmula em larga escala.
-
-#### Cenário 2: Conversão de Valores com Dízimas ou Decimais Fracionados
-* **Entrada (Fahrenheit):** `47.0`
-* **Resultado Esperado (Celsius):** `8.33` (com arredondamento configurado)
-* **Explicação:** Verifica como o framework e o método de conversão lidam com dízimas periódicas e arredondamentos matemáticos necessários na física térmica.
 
 ### Execução do Teste
 Aqui está o registro da execução bem-sucedida utilizando a suíte do xUnit:
